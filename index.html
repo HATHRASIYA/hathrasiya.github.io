@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hathrasiya Hing</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <h1 data-en="Hathrasiya Hing" data-hi="हठरासिया हींग">Hathrasiya Hing</h1>
+      <div class="lang-switcher">
+        <button onclick="switchLanguage('en')">EN</button> | 
+        <button onclick="switchLanguage('hi')">HI</button>
+      </div>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-content">
+      <h2 data-en="Taste the Purity of Tradition" data-hi="परंपरा की शुद्धता का स्वाद लें">Taste the Purity of Tradition</h2>
+      <p data-en="GI-tagged Hing directly from Hathras" data-hi="हाथरस से सीधे GI-टैग वाली हींग">GI-tagged Hing directly from Hathras</p>
+      <a href="#product" class="cta-button" data-en="Shop Now" data-hi="अब खरीदें">Shop Now</a>
+    </div>
+    <img src="hing-jar.png" alt="Hing Jar" />
+  </section>
+
+  <section id="product" class="product-section">
+    <h3 data-en="Our Bestseller" data-hi="हमारा सर्वश्रेष्ठ उत्पाद">Our Bestseller</h3>
+    <div class="product-card">
+      <img src="hing-jar.png" alt="Hing 10 GM" />
+      <h4 data-en="Hathrasiya Hing (Original) – 10 GM" data-hi="हठरासिया हींग (मूल) – 10 ग्राम">Hathrasiya Hing (Original) – 10 GM</h4>
+      <p data-en="Price: ₹249 + ₹40 Delivery" data-hi="मूल्य: ₹249 + ₹40 डिलीवरी">Price: ₹249 + ₹40 Delivery</p>
+      <button onclick="showOrderForm()" data-en="Order Now" data-hi="अभी ऑर्डर करें">Order Now</button>
+    </div>
+  </section>
+
+  <section id="order-form" style="display:none;" class="form-section">
+    <h3 data-en="Enter Delivery Address" data-hi="डिलीवरी पता दर्ज करें">Enter Delivery Address</h3>
+    <textarea id="address" placeholder="Your full delivery address"></textarea>
+    <button onclick="submitOrder()" data-en="Submit Order" data-hi="ऑर्डर सबमिट करें">Submit Order</button>
+  </section>
+
+  <section id="thank-you" style="display:none;" class="thank-section">
+    <h3 data-en="Thank you for your order!" data-hi="आपके ऑर्डर के लिए धन्यवाद!">Thank you for your order!</h3>
+    <p data-en="We will contact you shortly via WhatsApp." data-hi="हम आपसे जल्द ही WhatsApp के माध्यम से संपर्क करेंगे।">We will contact you shortly via WhatsApp.</p>
+  </section>
+
+  <section class="usp">
+    <h3 data-en="Why Choose Us?" data-hi="हमें क्यों चुनें?">Why Choose Us?</h3>
+    <ul>
+      <li data-en="GI-tag Certified Hing from Hathras" data-hi="हाथरस से GI-टैग वाली हींग">GI-tag Certified Hing from Hathras</li>
+      <li data-en="Strong Aroma & Authentic Taste" data-hi="तीव्र सुगंध और प्रामाणिक स्वाद">Strong Aroma & Authentic Taste</li>
+      <li data-en="Loved by Thousands of Families" data-hi="हज़ारों परिवारों द्वारा पसंद की गई">Loved by Thousands of Families</li>
+    </ul>
+  </section>
+
+  <section class="testimonials">
+    <h3 data-en="Customer Reviews" data-hi="ग्राहक समीक्षा">Customer Reviews</h3>
+    <blockquote>"This hing reminds me of my grandmother's cooking!" – Neha G.</blockquote>
+    <blockquote>"Strong aroma, pure and worth the price!" – Rakesh T.</blockquote>
+  </section>
+
+  <a href="https://wa.me/918755666903" class="whatsapp-button">WhatsApp</a>
+</body>
+</html>
