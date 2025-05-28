@@ -1,13 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Dashboard – HATHRASIYA</title>
-  <link rel="stylesheet" href="styles/custom.css" />
+  <meta charset="UTF-8">
+  <title>Admin Dashboard - HATHRASIYA</title>
+  <link rel="stylesheet" href="../styles/custom.css">
 </head>
 <body>
-  <h1>Admin Dashboard</h1>
-  <p>Welcome, Admin!</p>
-  <a href="admin/upload.html"><button>Upload New Product</button></a>
+  <h2>📦 Admin Dashboard</h2>
+
+  <form id="productForm">
+    <input type="text" id="name" placeholder="Product Name" required><br>
+    <input type="text" id="description" placeholder="Product Description" required><br>
+    <input type="number" id="price" placeholder="Product Price ₹" required><br>
+    <button type="submit">➕ Add Product</button>
+  </form>
+
+  <pre id="output" style="background:#f4f4f4;padding:10px;"></pre>
+
+  <p>📋 Copy the below JSON and paste it manually into <code>products.json</code>.</p>
+
+  <script src="admin/admin.js"></script>
 </body>
 </html>
