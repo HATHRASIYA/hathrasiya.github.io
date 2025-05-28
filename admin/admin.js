@@ -1,28 +1,20 @@
-document.getElementById("uploadForm").addEventListener("submit", function (e) {
+document.getElementById('productForm').addEventListener('submit', function (e) {
   e.preventDefault();
 
-  const formData = new FormData(this);
-  const product = {
-    name: formData.get("name"),
-    price: parseFloat(formData.get("price")),
-    weight: formData.get("weight"),
-    description: formData.get("description"),
-    image: formData.get("image"),
-  };
+  const name = document.getElementById('name').value.trim();
+  const description = document.getElementById('description').value.trim();
+  const price = parseFloat(document.getElementById('price').value);
 
-  // Load existing products
-  fetch("../products.json")
-    .then((res) => res.json())
-    .then((products) => {
-      products.push(product);
+  if (!name || !description || isNaN(price)) {
+    alert("❌ Please fill all fields correctly.");
+    return;
+  }
 
-      // Uploading new list
-      fetch("../products.json", {
-        method: "PUT", // Will not work directly on GitHub, only on backend
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(products, null, 2),
-      }).then(() => {
-        alert("Product added (Note: This only works with real backend)");
-      });
-    });
+  const product = { name, description, price };
+  const json = JSON.stringify(product, null, 2);
+
+  document.getElementById('output').textContent = json;
+
+  alert("✅ Product JSON generated. Copy it and paste into products.json manually.");
+  document.getElementById('productForm').reset();
 });
