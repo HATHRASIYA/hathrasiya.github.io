@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Upload Product</title>
+  <link rel="stylesheet" href="../style.css" />
+</head>
+<body>
+  <h1>Admin Dashboard – Upload New Product</h1>
+  <form id="uploadForm">
+    <label>Product Name: <input type="text" name="name" required></label><br><br>
+    <label>Price (INR): <input type="number" name="price" required></label><br><br>
+    <label>Weight (e.g., 10 GM): <input type="text" name="weight" required></label><br><br>
+    <label>Description: <textarea name="description" required></textarea></label><br><br>
+    <label>Image URL: <input type="text" name="image" required></label><br><br>
+    <button type="submit">Upload</button>
+  </form>
+
+  <script src="../scripts/products.js"></script>
+</body>
+</html>
