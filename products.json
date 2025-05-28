@@ -1,1 +1,16 @@
-[]  # Product list in JSON format
+[
+  {
+    "id": 1,
+    "name": "Authentic GI Asafetida",
+    "price": 199,
+    "image": "https://example.com/images/asafoetida.jpg",
+    "description": "Premium quality GI-tagged Indian asafetida."
+  },
+  {
+    "id": 2,
+    "name": "Handmade Spices Box",
+    "price": 499,
+    "image": "https://example.com/images/spicebox.jpg",
+    "description": "Wooden box with traditional Indian spices."
+  }
+]
